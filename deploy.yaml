@@ -3,6 +3,8 @@ kind: Deployment
 metadata:
   name: nginx-deployment
   namespace: http
+  annotations:
+    argocd.argoproj.io/hook: PreSync
 spec:
   selector:
     matchLabels:
