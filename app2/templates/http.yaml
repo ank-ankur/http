@@ -7,7 +7,7 @@ spec:
   selector:
     matchLabels:
       app: http
-  replicas: 2
+  replicas: {{ .Values.spec.replica }}
   template:
     metadata:
       labels:
